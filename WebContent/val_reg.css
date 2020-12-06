@@ -1,0 +1,26 @@
+body{
+    background:  #4ABDAC ;
+    
+}
+table, td,th {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  table{
+  margin-top: 50px;
+  margin-left: 60px;
+  background: #ffffff;
+  }
+h1{
+	text-align: center;
+}
+.acbut{
+	background: green;
+	color: white;
+}
+.rjbut{
+	background: red;
+	color: white;
+}

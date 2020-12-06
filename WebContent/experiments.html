@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+padding-bottom:18px}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.collapsible {
+  background-color:  #e2ede2  ;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color:  #4dd647 ;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+<h2 align="center" style="color:white" >Events</h2>
+
+<div class="row">
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Hackathon" style="height:200px">
+      <p>Hackathon</p>
+      <p>Date and Time</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  </div>
+
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Music Concert" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
+  </div>
+  
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+	  <img src="./events_images/dj.jpg" alt="Tech Fest" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
+  </div>
+  
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Amritotsavam" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Hackathon" style="height:200px">
+      <p>Hackathon</p>
+      <p>Date and Time</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  </div>
+
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Music Concert" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
+  </div>
+  
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+	  <img src="./events_images/dj.jpg" alt="Tech Fest" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
+  </div>
+  
+  <div class="column">
+  <button type="button" class="collapsible"><div class="card">
+      <img src="./events_images/dj.jpg" alt="Amritotsavam" style="height:200px">
+      <p>Some text</p>
+      <p>Some text</p>
+    </div></button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  </div>
+</div>
+
+
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

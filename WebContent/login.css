@@ -1,0 +1,51 @@
+.logbody{
+    background-color: #4ABDAC ;
+}
+.headdiv{
+    margin-left: 450px;
+    font-size: xx-large;
+}
+.formdiv{  
+    width: 322px;
+    height: 300px;  
+    overflow: hidden;  
+    margin-top: 50px;
+    margin-left: 550px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 50px; 
+    background:#FC4A1A;
+    border-radius: 15px ;  
+      
+}
+.inhead{
+    margin-bottom: 50px;
+    margin-left: 100px;
+    font-size: xx-large;
+}
+.loginp{
+    width: 270px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px ;
+    border-block-color: yellow;  
+}
+.logsub{
+    width: 50%;
+    margin-left: 73px;
+    padding: 5px;
+    border-radius: 30px ;
+    border-block-color: yellow;
+}
+.btn{
+    margin-top: 20px;
+}
+.reg{
+    margin-left: 450px;
+    
+}
+.regbut{
+	margin-left: 10px;
+}
+

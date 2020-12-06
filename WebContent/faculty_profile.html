@@ -1,0 +1,127 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="faculty_profile.css">
+
+</head>
+<head>
+<title>Profile</title>
+<h1 style="text-align:center">AMRITA SCHOOL OF ENGINEERING</h1>
+<h1 style="text-align:center">CSE</h1>
+<h2 style="text-align:center">Faculty Profile</h2>
+</head>
+<body>
+<table>
+<img style="margin-left:25px;" src="profile.jpg" width="200" height="200" />
+<tr><td><input type="file" name="image" ></td></tr>
+<tr><td><input name="Submit" type="submit" value="Upload image"></td></tr>
+</table>
+
+
+<form name="newad"  action="#" onsubmit="return validateForm()" method="post"  >
+
+<fieldset>
+<center><div class="profile">
+<h2>Personal Details</color></h2>
+
+<p>
+<label for="fullname">Full Name</label>
+<input type="text"  name="name" class="search" >
+</p>
+<p>
+<label for="dob">Date Of Birth</label>
+<input type="datetime-local" name="dob" class="search">
+</p>
+<p>
+<label for="address">Residential Address</label>
+<input type="textarea" name="address" name="address" class="search">
+</p>
+<p>
+<label for="full name">Personal Phone Number </label>
+<input type="tel" name="tel" name="tel" class="search" >
+</p>
+</fieldset>
+<fieldset>
+<center><div class="profile">
+<h2>Acadamic Information</h2>
+<p>
+<label for="ptin">Years of Experience </label>
+<input type="text" id="yr" name="ptin" class="search" >
+</p>
+<p>
+<label for="bname">Research area</label>
+<input type="text" id="ra" name="bname" class="search">
+</p>
+<label for="full baddress">Achivements</label>
+<input type="textarea" id="ac"name="baddress"class="search">
+</p>
+<p>
+<label for="option">Qualification </label>
+<select>
+<option id="sector" class="search">
+<option value="edu">M.Tech </option>
+<option value="env">M.E</option>
+<option value="tourism">Other</option>
+</select>
+</p>
+<p>
+</fieldset>
+
+<p><input type="submit" value="Update" name="Submit"class="search-box-input">  <br>  <br>  
+                              
+</form>
+<script>
+    function validateForm()
+{
+     
+  var x = document.forms["newad"]["name"];
+  var y=document.forms["newad"]["ra"];
+   var z=document.forms["newad"]["yr"];
+   var phone=document.forms["newad"]["tel"];
+  if (x.value == "") {
+    window.alert("Name field is mandatory"); // confirm // prompt
+    x.focus();
+    return false;
+  }
+  
+  if (y.value == "" ) {
+    window.alert("Research area field is mandatory"); // confirm // prompt
+    y.focus();
+    return false;
+  }
+  if (z.value == "" ) {
+    window.alert("Year of experience field is mandatory"); // confirm // prompt
+    z.focus();
+    return false;
+  }
+  
+  if (phone.value == "")                           
+                { 
+                    window.alert("Please enter your telephone number."); 
+                    phone.focus(); 
+                    return false; 
+                } 
+ if (z.value.length>2)                           
+ { 
+                    window.alert("Please Enter a valid years of experience"); 
+                    z.focus(); 
+                    return false; 
+ } 
+ if (phone.value.length!=10)                           
+ { 
+                    window.alert("Please Enter a valid Phone Number"); 
+                    phone.focus(); 
+                    return false; 
+ } 
+  
+  
+//   if (x != "" || x != null && y!=null || y!="" && z!=null || !="") {
+    window.alert("Successfully updated"); // confirm // prompt
+//     return false;}
+
+}
+
+</script>
+
+</body>
+</html>

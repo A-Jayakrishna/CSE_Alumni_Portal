@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+	<script language="javascript" type="text/javascript" src="index.js">
+    </script>
+</head>
+<body class="logbody">
+    <section>
+        <div class = "outerdiv">
+          <div class = "headdiv">
+            <h1>CSE ALUMNI PORTAL</h1>
+          </div>
+          <div class = "reg">
+            <p><b>If you do not have an account then register here</b></p><input type="button" onclick="registersel()" value="Register"/>
+          </div>
+          <aside class="formdiv">
+            <h2 class ="inhead">Login</h2>
+            <form id = "logform" name="logform" action="logcheck" method="post"> 
+                <input class="loginp" type="text" name="loguser" placeholder="username"/><br/>
+                <input class="loginp" placeholder="Password" name="logpass" type="password"><br/>
+                <input type="radio" id="alumni" name="user" value="alu"><label>ALUMNI</label><br/>
+                <input type="radio" id="coordinator" name="user" value="cor"><label>COORDINATOR</label><br/>
+                <input class="logsub btn" type="submit" value="Log In"/>
+            </form>
+          </aside>
+        </div>
+        
+      </section>
+</body>
+</html>

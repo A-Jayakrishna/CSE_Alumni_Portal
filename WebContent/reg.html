@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Registration form</title>
+   <link rel="stylesheet" href="reg.css" type="text/css">
+   <script src="reg.js"></script>
+ </head>
+
+   <body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+   <form name='registration' onSubmit="return formValidation();">
+     <ul>
+       <li><label for="facultyid">faculty id:</label></li>
+       <li><input type="text" name="facultyid" size="12" /></li>
+       <li><label for="passid">Password:</label></li>
+        <li><input type="password" name="passid" size="12" /></li>
+        <li><label for="username">Name:</label></li>
+        <li><input type="text" name="username" size="50" /></li>
+        <li><label for="designation">designation:</label></li>
+        <li><input type="text" name="designation" size="50" /></li>
+        <li><label for="country">Country:</label></li>
+        <li><select name="country">
+            <option selected="" value="Default">(Please select a state)</option>
+            <option value="AF">Andhra Pradesh</option>
+            <option value="AD">Arunachal Pradesh</option>
+            <option value="AD">Delhi</option>
+            <option value="AL">Maharashtra</option>
+            <option value="DZ">Karanataka</option>
+            <option value="AS">Kerala</option>
+            <option value="AD">Tamilnadu</option>
+            <option value="AD">Rajasthan</option>
+            <option value="AD">UttaraKhand</option>
+            <option value="AD">Uttar Pradesh</option>
+
+          </select></li>
+        <li><label for="experience">years of experience:</label></li>
+        <li><input type="text" name="experience" /></li>
+        <li><label for="email">Email:</label></li>
+        <li><input type="text" name="email" size="50" /></li>
+        <li><label id="gender">Sex:</label></li>
+        <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+        <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+        <li><label>Language:</label></li>
+        <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+        <li><input type="checkbox" name="nonen" value="noen" /><span>Telugu</span></li>
+        <li><input type="checkbox" name="nonen" value="noen" /><span>Hindi</span></li>
+        <li><input type="checkbox" name="nonen" value="noen" /><span>Kannada</span></li>
+        <li><label for="desc">About Yourself:</label></li>
+        <li><textarea name="desc" id="desc"></textarea></li>
+        <li><input type="submit" name="submit" value="Submit" /></li>
+      </ul>
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #3ed7f2;
+  color: white;
+}
+
+  div.mySlides {display:none;}
+  h1{
+    text-align: center;
+  }
+  div.mo{text-align: center;}
+  div.cont {
+      background-color: lightgrey;
+      width: 400px;
+      border: 10px solid green;
+      padding: 75px 400px;
+      margin: 1px;
+    }
+img.im{
+  float: left;
+}
+img.im2{
+  float: right;
+}
+div.footer-inner {
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+    width: 922px;
+}
+    </style>
+    </head>
+<body id="p1" style="background-color:powderblue;margin: 0;">
+<nav>
+<div class="topnav">
+  <a href='HOME.html' target="_self">Home</a>
+  <a href='login.jsp' target="_self">Login</a>
+  <a href='./info_pages/info.html' target="_self">Information</a>
+  <a href='contact.jsp' target="_self">Contact Us</a>
+  <a href='./aboutus.html' target="_self">About Us</a>
+</div>
+</nav>
+    <h1> Amrita Vishwa Vidyapeetham</h1>
+
+
+
+<div class="cont" style="max-width:1000px">
+  <img class="mySlides" src="./home_images/1.jpg" style="width:100%">
+  <img class="mySlides" src="./home_images/2.jpg" style="width:100%">
+  <img class="mySlides" src="./home_images/3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body >
+<div >
+    <p><img class="im" src="./home_images//4.jpg" alt="im" style="width:300px;height:300px;margin-left:15px;">
+        Amrita Vishwa Vidyapeetham is a private deemed-to-be-university and Institute of Eminence based in Coimbatore
+        , Tamil Nadu, India. The multi-campus, multi-disciplinary university currently has 6 campuses with 15 
+        constituent schools across Tamil Nadu, Kerala and Karnataka. It offers a total of 207 undergraduate,
+         postgraduate, integrated-degree, dual-degree, doctoral, and certification programs in Engineering,
+          Medicine, Business, Arts & Sciences, Biotechnology, Mass Communication and Social Work. 
+          The university was founded with the opening of Amrita School of Engineering, Coimbatore in 1994
+           by Mata Amritanandamayi Devi, and is managed by her international humanitarian organisation Mata
+            Amritanandamayi Math. In 2003, it became one of the youngest institutes to be deemed a university, 
+        when it was conferred this status by the UGC.At present, the university has 6 campuses, with 15 constituent schools spread across both rural and
+        urban sites in three south Indian states - Tamil Nadu, Kerala and Karnataka.[1] The first to be established 
+        was the Coimbatore campus in 1994, with the opening of Amrita School of Engineering at Ettimadai, a village 
+        about 20 km east of the Coimbatore city. Amrita Institute of Medical Sciences (AIMS) in Edapally, Kochi was 
+        inaugurated in 17 May 1998 by the then Prime Minister, Atal Bihari Vajpayee.</p>
+</div>
+<div >
+    <p><img class="im2" src="./home_images/5.jpg" alt="im" style="width:300px;height:300px;margin-left:15px;">
+         Later in 2002, two campuses were
+          opened, one urban campus at the IT capital of India - Bengaluru, and one rural campus in Amritapuri village, 
+          which also hosts the headquarters of the Mata Amritanandamayi Math that runs the university. In 2019
+           Faridabad, Haryana[7] and Amaravati, Andhra Pradesh.Amrita Schools of Arts and Sciences
+           The schools offer Bachelor of Commerce (B.Com.), Bachelor of Business Management (BBM), Bachelor of Computer Applications (BCA), Master of Computer Applications (MCA), Master of Science (M.Sc.) in Computer Science and Information Technology. The campuses offering Arts and Sciences are[9] located at Amritapuri, Kochi and Mysore.
+           
+           Amrita Schools of Business
+           The school offers AACSB accredited residential two-year MBA degree program. 
+           In addition, it offers a dual degree program leading to an MS in information 
+           technology and MBA in collaboration with State University of New York at Buffalo, 
+           for working professionals at the Bangalore campus.[10] Faculty members have M.B.A.s
+            and Doctorate from reputed foreign universities such as University of California, 
+            Berkeley, Cornell University, NYU Stern School of Business, University of Texas at Austin,
+             and Kellogg School of Management.[11]
+           
+           Amrita School of Biotechnology
+           The school was started in September 2004 and offers B.Sc. and M.Sc. in Biotechnology,
+            B.Sc. and M.Sc. in Microbiology, and M.Sc. in Bioinformatics, as well as Ph.D. degree
+             programs.[12] Its research spans a wide spectrum including Cell Biology, Molecular Biology, 
+             Cancer Biology, Cell-line Engineering, Wound Healing, Computational Neuroscience, Neurophysiology,
+              Phytochemistry, Biomedical Engineering, Proteomics, RNAi, Analytical Chemistry, Snake Venoms,
+               Sanitation Biotechnology.[13]
+           
+           The Amrita School of Biotechnology is approved as a Center of Relevance and Excellence
+            (CORE) in Biomedical Technology under the Department of Science and Technology, Government 
+            of India, TIFAC Mission REACH programme. The School of Biotechnology was selected by the
+             DBT-BIRAC (Government of India) and the Bill & Melinda Gates Foundation as one of the top
+              six innovators in India to develop next generation sanitation solutions using bacteriophages
+               and other biocontrol agents.[14][15]</p><hr>
+</div>
+
+
+<div class="mo" id="footer">
+	<div id="footer-inner">
+		<p >&copy; Copyright <a href="//www.html.am">HTML.am</a> &#124; <a href="//www.html.am/privacy_policy.cfm">Privacy Policy</a></p>
+		<div class="clr"></div>
+		<div id="mobile-toggle">
+			<b >Desktop</b> | <a href="/html-codes/character-codes/html-copyright-code.cfm?newView=Mobile" rel="nofollow">Mobile Site</a>
+		</div>
+	</div>
+</div>
+</html>

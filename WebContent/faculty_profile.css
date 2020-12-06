@@ -1,0 +1,47 @@
+<style type="text/css">
+.profile {
+  width: 5px;
+  height: 70px;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: px;
+  margin: 5%;
+  background-color: black;
+  /* opacity: 0.8; */
+}
+.search {
+  font-size: inherit;
+  border: 2px solid #ddd;
+  background-color: #ddd;
+  /* border-left: 0; */
+  border-radius:  0.5cm;
+  outline: 0;
+  padding: 0 0.45cm;
+  cursor: pointer;
+  font-weight: bold;
+  height:40px;
+  width:300px;
+}
+form h1 {
+color: black;
+text-align: center;
+}
+form {
+font-size: 18px;
+color: black;
+}
+input {
+display: block;
+clear: both;
+}
+
+label input {
+display: block;
+color: red;
+}
+body {
+background: #bdc3c7;
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+}
+</style>
